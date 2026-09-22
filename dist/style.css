@@ -86,3 +86,27 @@ footer{background:#031521;color:#d8e1e5;padding:4rem 0 0;font-size:.83rem}.foote
 @media(max-width:680px){.diagnosis-image{grid-template-columns:1fr;margin-top:2rem}.diagnosis-image img{height:250px}.diagnosis-image figcaption{writing-mode:horizontal-tb;transform:none}.visual-story{grid-template-columns:1fr;gap:.75rem;margin-bottom:4rem}.visual-story figure{aspect-ratio:4/3}.visual-story figcaption{font-size:.62rem;padding:.55rem}.method-image{height:240px}}
 
 .about-intro:has(>.about-title:only-child){display:block;max-width:920px}
+/* Formulário de captação — continuidade editorial das etapas */
+.lead-form-shell{margin:1.5rem 0 0 4.5rem;padding:3rem 0 0;border-top:1px solid var(--gold)}
+.lead-form-shell .form-kicker{margin:0 0 .7rem;color:#8a6426;font-size:.67rem;font-weight:700;letter-spacing:.13em}
+.lead-form-shell>h3{font-family:var(--serif);font-size:clamp(2rem,3.5vw,3.6rem);font-weight:500;line-height:1.05;letter-spacing:-.03em;margin:0 0 1rem;max-width:13ch}
+.lead-form-shell>p:not(.form-kicker){max-width:40rem;margin:0 0 2.2rem}
+.lead-form{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem 1.2rem;position:relative}
+.form-field{display:flex;flex-direction:column;gap:.5rem}
+.form-field label{font-size:.7rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--ink)}
+.form-field input{width:100%;min-height:52px;border:0;border-bottom:1px solid #9ca9aa;background:rgba(255,255,255,.62);color:var(--ink);font:inherit;padding:.8rem 1rem;border-radius:0;outline:0;transition:border-color .2s,background .2s}
+.form-field input:focus{border-bottom:2px solid var(--gold);background:#fff}
+.form-field input[aria-invalid="true"]{border-color:#a23d32;background:#fff7f5}
+.form-trap{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}
+.form-submit{grid-column:1/-1;width:100%;margin-top:.6rem;justify-content:center;background:var(--ink);border-color:var(--ink);color:#fff}
+.form-submit:hover{background:#fff;color:var(--ink)}
+.form-submit:disabled{cursor:wait;opacity:.68;transform:none}
+.form-status{grid-column:1/-1;min-height:1.4rem;margin:0;font-size:.82rem;color:var(--muted)}
+.form-status[data-state="error"]{color:#8e3028}.form-status[data-state="success"]{color:#24613d}
+.pain .split>div:first-child{position:static}
+.pain-form{margin:3rem 0 0;padding-top:2.4rem}
+.pain-form>h3{font-size:clamp(2rem,3vw,3.2rem)}
+.pain-form .lead-form{grid-template-columns:1fr}
+.final-cta .wrap{grid-template-columns:1fr}
+@media(max-width:980px){.lead-form-shell{margin-left:0}}
+@media(max-width:680px){.lead-form{grid-template-columns:1fr}.lead-form-shell{padding-top:2.4rem}.lead-form-shell>h3{font-size:2.55rem}.form-submit{grid-column:1;width:100%;padding-left:.9rem;padding-right:.9rem}}
