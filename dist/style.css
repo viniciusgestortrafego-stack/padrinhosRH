@@ -26,3 +26,28 @@
 .founder-tags span{border:1px solid #d7d3c8;border-radius:99px;padding:5px 11px;font-size:11px;letter-spacing:.04em;color:#695f4d}
 @media(max-width:850px){.about-intro{grid-template-columns:1fr;gap:30px;margin-bottom:38px}.founders-grid{grid-template-columns:1fr}.founders-photo img{aspect-ratio:16/9}.founder-card{padding:34px}}
 @media(max-width:580px){.about{padding:62px 0}.about-intro .about-title{padding-left:22px}.founders-photo img{aspect-ratio:4/3;object-position:center}.founders-photo figcaption{position:static;display:block;background:var(--navy);font-size:11px}.founder-card{padding:27px}.founder-card h3{font-size:32px}.founder-title{font-size:18px}.founder-card blockquote{font-size:18px}}
+
+/* Vídeo do hero */
+.hero-video,.hero-scrim{display:none}
+@media(max-width:850px){
+  .hero{position:relative;isolation:isolate;overflow:hidden;background:var(--navy);padding:0;min-height:calc(100svh - 79px);display:flex;align-items:center}
+  .hero-video,.hero-scrim{display:block;position:absolute;inset:0}
+  .hero-video{z-index:-2;background:var(--navy)}
+  .hero-video video{width:100%;height:100%;object-fit:cover;object-position:center;display:block}
+  .hero-scrim{z-index:-1;background:linear-gradient(180deg,rgba(5,25,39,.56) 0%,rgba(5,25,39,.7) 52%,rgba(5,25,39,.9) 100%)}
+  .hero .hero-grid{display:block;padding-top:64px;padding-bottom:64px}
+  .hero .hero-copy{max-width:610px}
+  .hero .hero-copy h1,.hero .hero-copy .hero-lead{color:#fff;text-shadow:0 2px 20px rgba(0,0,0,.25)}
+  .hero .hero-copy>p:not(.eyebrow):not(.micro){color:#f2f5f6}
+  .hero .hero-copy .eyebrow{color:#f0ca83}
+  .hero .hero-copy h1 em{color:#f0ca83}
+  .hero .hero-copy>.button{background:#e1b867;color:var(--navy)}
+  .hero .hero-copy>.button:hover{background:#f0ce8e}
+  .hero .hero-copy .micro{color:#e5ecef}
+  .hero .hero-art,.hero .hero-foot{display:none}
+}
+@media(max-width:580px){
+  .hero{min-height:calc(100svh - 79px)}
+  .hero .hero-grid{padding-top:50px;padding-bottom:50px}
+}
+@media(prefers-reduced-motion:reduce){.hero-video video{display:none}.hero-video{background:url('hero-mobile-poster.jpeg') center/cover no-repeat}}
