@@ -115,7 +115,7 @@ footer{background:#031521;color:#d8e1e5;padding:4rem 0 0;font-size:.83rem}.foote
 h1,h2{font-family:var(--sans);font-weight:600;line-height:1.08;letter-spacing:-.045em}
 h1{font-size:clamp(3.5rem,5.7vw,5.3rem);max-width:12ch}
 h2{font-size:clamp(2.8rem,4.6vw,4.65rem);max-width:14ch}
-.hero{min-height:110svh;align-items:flex-end;padding:0}
+.hero{min-height:118svh;align-items:flex-end;padding:0}
 .hero-grid{grid-template-columns:minmax(0,760px);padding-bottom:clamp(2.25rem,4.5vh,3.75rem)}
 @media(min-width:981px){
   .hero h1{max-width:12ch;font-size:clamp(3.25rem,4.15vw,4.15rem);line-height:1.06}
@@ -127,7 +127,7 @@ h2{font-size:clamp(2.8rem,4.6vw,4.65rem);max-width:14ch}
 @media(max-width:680px){
   h1{font-size:clamp(2.55rem,11vw,3.25rem);max-width:11ch}
   h2{font-size:clamp(2.45rem,10vw,3.35rem)}
-  .hero{min-height:112svh}
+  .hero{min-height:120svh}
   .hero-grid{padding:0 0 2rem}
   .hero h1{font-size:clamp(2.55rem,11vw,3.25rem);line-height:1.06;max-width:11ch}
   .hero-copy .eyebrow{margin-bottom:1.1rem}
