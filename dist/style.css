@@ -110,3 +110,27 @@ footer{background:#031521;color:#d8e1e5;padding:4rem 0 0;font-size:.83rem}.foote
 .final-cta .wrap{grid-template-columns:1fr}
 @media(max-width:980px){.lead-form-shell{margin-left:0}}
 @media(max-width:680px){.lead-form{grid-template-columns:1fr}.lead-form-shell{padding-top:2.4rem}.lead-form-shell>h3{font-size:2.55rem}.form-submit{grid-column:1;width:100%;padding-left:.9rem;padding-right:.9rem}}
+
+/* Retorno à tipografia da primeira direção visual e hero mais cinematográfico */
+h1,h2{font-family:var(--sans);font-weight:600;line-height:1.08;letter-spacing:-.045em}
+h1{font-size:clamp(3.5rem,5.7vw,5.3rem);max-width:12ch}
+h2{font-size:clamp(2.8rem,4.6vw,4.65rem);max-width:14ch}
+.hero{min-height:110svh;align-items:flex-end;padding:0}
+.hero-grid{grid-template-columns:minmax(0,760px);padding-bottom:clamp(2.25rem,4.5vh,3.75rem)}
+@media(min-width:981px){
+  .hero h1{max-width:12ch;font-size:clamp(3.25rem,4.15vw,4.15rem);line-height:1.06}
+  .hero-copy .eyebrow{margin-bottom:1.35rem}
+  .hero-lead{margin-top:1.25rem}
+  .hero-copy>p:not(.eyebrow):not(.micro){max-width:42rem;margin-bottom:.8rem}
+  .hero-copy>.button{margin-top:.35rem}
+}
+@media(max-width:680px){
+  h1{font-size:clamp(2.55rem,11vw,3.25rem);max-width:11ch}
+  h2{font-size:clamp(2.45rem,10vw,3.35rem)}
+  .hero{min-height:112svh}
+  .hero-grid{padding:0 0 2rem}
+  .hero h1{font-size:clamp(2.55rem,11vw,3.25rem);line-height:1.06;max-width:11ch}
+  .hero-copy .eyebrow{margin-bottom:1.1rem}
+  .hero-lead{margin-top:1.2rem}
+  .hero-scrim{background:linear-gradient(to bottom,rgba(3,22,34,.18) 0%,rgba(3,22,34,.34) 42%,rgba(3,22,34,.83) 100%)}
+}
