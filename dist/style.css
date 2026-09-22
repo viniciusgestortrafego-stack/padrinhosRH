@@ -139,3 +139,10 @@ h2{font-size:clamp(2.8rem,4.6vw,4.65rem);max-width:14ch}
   .hero-lead{margin-top:1.2rem}
   .hero-scrim{background:linear-gradient(to bottom,rgba(3,22,34,.18) 0%,rgba(3,22,34,.34) 42%,rgba(3,22,34,.83) 100%)}
 }
+
+/* Ritmo vertical consistente entre títulos, textos e ações */
+:root{--text-gap-title:1.5rem;--text-gap-subtitle:.75rem}
+.pain h2+p,.method-heading h2+p,.faq h2+p,.final-cta h2+p{margin-top:var(--text-gap-title)}
+.pain-list h3,.why-grid h3,.steps-grid h3{margin-bottom:var(--text-gap-subtitle)}
+.pain-list h3+p,.why-grid h3+p,.steps-grid h3+p{margin-top:0}
+.final-cta>.wrap>p:not(.eyebrow):not(.micro){margin-top:var(--text-gap-title)}
