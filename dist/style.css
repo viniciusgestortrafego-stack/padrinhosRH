@@ -107,6 +107,11 @@ footer{background:#031521;color:#d8e1e5;padding:4rem 0 0;font-size:.83rem}.foote
 .pain-form{margin:3rem 0 0;padding-top:2.4rem}
 .pain-form>h3{font-size:clamp(2rem,3vw,3.2rem)}
 .pain-form .lead-form{grid-template-columns:1fr}
+.pain-form{padding:clamp(2rem,3.2vw,3rem);background:var(--gold-light);border-top:0}
+.pain-form .form-kicker,.pain-form>h3,.pain-form>p:not(.form-kicker),.pain-form .form-field label{color:var(--ink-deep)}
+.pain-form .form-field input{background:#fff;border-bottom-color:rgba(4,27,42,.5)}
+.pain-form .form-submit{background:var(--ink-deep);border-color:var(--ink-deep)}
+.pain-form .form-submit:hover{background:#fff;color:var(--ink-deep);border-color:#fff}
 .final-cta .wrap{grid-template-columns:1fr}
 @media(max-width:980px){.lead-form-shell{margin-left:0}}
 @media(max-width:680px){.lead-form{grid-template-columns:1fr}.lead-form-shell{padding-top:2.4rem}.lead-form-shell>h3{font-size:2.55rem}.form-submit{grid-column:1;width:100%;padding-left:.9rem;padding-right:.9rem}}
