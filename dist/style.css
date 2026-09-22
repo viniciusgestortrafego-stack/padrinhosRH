@@ -84,3 +84,5 @@ footer{background:#031521;color:#d8e1e5;padding:4rem 0 0;font-size:.83rem}.foote
 .method-image img{width:100%;height:100%;object-fit:cover;object-position:center 52%;filter:saturate(.65) contrast(1.06)}
 @media(max-width:980px){.diagnosis-image{max-width:420px}.method-image{height:320px}}
 @media(max-width:680px){.diagnosis-image{grid-template-columns:1fr;margin-top:2rem}.diagnosis-image img{height:250px}.diagnosis-image figcaption{writing-mode:horizontal-tb;transform:none}.visual-story{grid-template-columns:1fr;gap:.75rem;margin-bottom:4rem}.visual-story figure{aspect-ratio:4/3}.visual-story figcaption{font-size:.62rem;padding:.55rem}.method-image{height:240px}}
+
+.about-intro:has(>.about-title:only-child){display:block;max-width:920px}
