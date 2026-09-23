@@ -110,7 +110,7 @@ footer{background:#031521;color:#d8e1e5;padding:4rem 0 0;font-size:.83rem}.foote
 .pain-form{padding:clamp(2rem,3.2vw,3rem);background:var(--gold-light);border-top:0}
 .pain-form .form-kicker,.pain-form>h3,.pain-form>p:not(.form-kicker),.pain-form .form-field label{color:var(--ink-deep)}
 .pain-form .form-field input{background:#fff;border-bottom-color:rgba(4,27,42,.5)}
-.pain-form .form-submit{background:var(--ink-deep);border-color:var(--ink-deep)}
+.pain-form .form-submit{background:var(--ink-deep);border-color:var(--ink-deep);color:#fff}
 .pain-form .form-submit:hover{background:#fff;color:var(--ink-deep);border-color:#fff}
 .final-cta .wrap{grid-template-columns:1fr}
 @media(max-width:980px){.lead-form-shell{margin-left:0}}
@@ -146,3 +146,19 @@ h2{font-size:clamp(2.8rem,4.6vw,4.65rem);max-width:14ch}
 .pain-list h3,.why-grid h3,.steps-grid h3{margin-bottom:var(--text-gap-subtitle)}
 .pain-list h3+p,.why-grid h3+p,.steps-grid h3+p{margin-top:0}
 .final-cta>.wrap>p:not(.eyebrow):not(.micro){margin-top:var(--text-gap-title)}
+
+/* Composição da seção de diagnóstico: título em duas linhas e formulário ao lado dos tópicos */
+@media(min-width:981px){
+  .pain .split{grid-template-columns:minmax(0,1.08fr) minmax(420px,.92fr);column-gap:clamp(3rem,5vw,5rem);row-gap:0;align-items:start}
+  .pain .split>div:first-child{display:contents}
+  .pain .split>div:first-child>.eyebrow,.pain .split>div:first-child>h2,.pain .split>div:first-child>p:not(.eyebrow){grid-column:1/-1}
+  .pain h2{max-width:none;font-size:clamp(2.8rem,3.7vw,3.8rem);line-height:1.05}
+  .pain .split>div:first-child>p:not(.eyebrow){max-width:60rem}
+  .pain-form{margin-top:2.25rem;padding:2rem}
+  .pain-form>h3{max-width:none;font-size:clamp(2rem,2.5vw,2.65rem)}
+  .pain-form>p:not(.form-kicker){margin-bottom:1.5rem}
+  .pain-form .lead-form{grid-template-columns:1fr 1fr;gap:1rem}
+  .pain-form .form-submit,.pain-form .form-status{grid-column:1/-1}
+  .pain-form{grid-column:1;grid-row:5}
+  .pain-list{grid-column:2;grid-row:5;margin-top:2.25rem;padding-top:.1rem}
+}
