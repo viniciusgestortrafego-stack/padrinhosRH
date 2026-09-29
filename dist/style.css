@@ -160,3 +160,24 @@ h2{font-size:clamp(2.8rem,4.6vw,4.65rem);max-width:14ch}
   .pain-form{grid-column:1;grid-row:5}
   .pain-list{grid-column:2;grid-row:5;margin-top:2.25rem;padding-top:.1rem}
 }
+
+/* Ritmo vertical e responsividade */
+:root{--space-section:clamp(4.5rem,7.5vw,7.5rem);--space-block:clamp(2.5rem,4.5vw,4rem)}
+.section,.about{padding-block:var(--space-section)}
+.why{padding-bottom:var(--space-section)}
+.about{background:var(--wash)}
+.section-top{margin-bottom:var(--space-block)}
+.about-intro{margin-bottom:var(--space-block)}
+.method-end{margin-top:var(--space-block)}
+.section-cta,.about-cta{padding-top:var(--space-block)}
+.service h3{font-size:clamp(1.9rem,3.1vw,3rem)}
+@media(max-width:680px){
+  .service h3{font-size:min(3rem,calc((100vw - 2.5rem)/7.6))}
+}
+@media(max-width:360px){
+  .header-inner{gap:.5rem}
+  .button.small{padding:.65rem .6rem;gap:.45rem;font-size:.62rem}
+}
+@media(min-width:981px){
+  .faq h2{font-size:clamp(2.5rem,3.5vw,3.3rem)}
+}
