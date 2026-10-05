@@ -181,3 +181,5 @@ h2{font-size:clamp(2.8rem,4.6vw,4.65rem);max-width:14ch}
 @media(min-width:981px){
   .faq h2{font-size:clamp(2.5rem,3.5vw,3.3rem)}
 }
+.credit-link{color:inherit;text-decoration:underline;text-decoration-color:rgba(228,191,120,.5);text-underline-offset:.2em;transition:color .2s}
+.credit-link:hover,.credit-link:focus-visible{color:var(--gold-light)}
