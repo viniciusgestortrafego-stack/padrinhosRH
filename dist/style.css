@@ -220,3 +220,19 @@ h2{font-size:clamp(2.8rem,4.6vw,4.65rem);max-width:14ch}
   .results-grid{grid-template-columns:1fr}
   .partnership-grid{grid-template-columns:1fr}
 }
+
+/* Áreas de atuação: duas colunas no desktop, mais compactas */
+.service-grid{border-bottom:1px solid #bfc6c4}
+.service:last-child{border-bottom:0}
+@media(min-width:981px){
+  .service-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:clamp(3rem,6vw,6rem)}
+  .service,.service:nth-child(even){display:block;padding:2.25rem 0 2.5rem}
+  .service-index{margin-bottom:1.1rem}
+  .service h3,.service:nth-child(even) h3{margin-bottom:1rem;font-size:clamp(1.8rem,2.5vw,2.5rem)}
+  .service>p:not(.ideal),.service ul{max-width:34rem}
+}
+@media(max-width:680px){
+  .service{padding:2.2rem 0}
+  .service-index{margin-bottom:1rem}
+  .service h3{margin-bottom:1rem}
+}
