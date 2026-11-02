@@ -236,3 +236,29 @@ h2{font-size:clamp(2.8rem,4.6vw,4.65rem);max-width:14ch}
   .service-index{margin-bottom:1rem}
   .service h3{margin-bottom:1rem}
 }
+
+/* Ajustes de celular: seções mais compactas e legíveis */
+@media(max-width:680px){
+  :root{--space-section:4rem;--space-block:2.25rem}
+  .visual-story{grid-template-columns:1fr 1fr;gap:.6rem;margin:0 0 2.5rem}
+  .visual-story figure{aspect-ratio:1/1}
+  .visual-story figure.visual-story-main{grid-column:1/-1;aspect-ratio:16/10}
+  .visual-story figcaption{font-size:.58rem;padding:.5rem .6rem}
+  .service{padding:1.9rem 0}
+  .service-index{margin-bottom:.7rem}
+  .service h3{margin-bottom:.8rem;font-size:clamp(1.75rem,8.4vw,2.1rem)}
+  .service-intro{font-size:1.02rem;line-height:1.45}
+  .service ul{margin:.1rem 0 .6rem}
+  .service li{padding:.1rem 0;font-size:.93rem}
+  .service .ideal{margin-top:.7rem;padding-top:.7rem;font-size:.78rem}
+  .pain-list article{padding:1.4rem 0}
+  .results-head{margin-bottom:2.25rem}
+  .results-grid{row-gap:1.9rem}
+  .results-grid article{padding-top:1.3rem}
+  .result-figure{margin-bottom:.7rem}
+  .founder-card,.founder-card+article{padding:2.25rem 0 1.75rem}
+  .founder-tags{margin-bottom:0}
+  .founder-card blockquote{margin:1.6rem 0 1.2rem;padding-top:1.2rem;font-size:1.25rem}
+}
+.service>p:last-child,.service ul:last-child{margin-bottom:0}
+.partnership{margin-top:calc(var(--space-block) * 1.25);padding-top:0;border-top:0}
